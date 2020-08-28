@@ -2,4 +2,12 @@
     height: 7rem;
     background-color: #fff;
     border-bottom: 1px solid var(--grey-light-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        height: 3.25rem;
+        padding-left: 2rem;
+    }
 }

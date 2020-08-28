@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+
+    & > * {
+        cursor: pointer;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    & > *:hover {
+        background-color: var(--grey-light-3);
+    }
+
+    &__icon{
+        height: 2.2rem;
+        width: 2.2rem;
+        fill: var(--grey-dark-2);
+    }
+
+    &__count{
+        font-size: 0.8rem;
+        background-color: var(--color-primary);
+        color: #fff;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -0.8rem;
+        margin-top: -2rem;
+    }
+
+    &__user-photo{
+        height: 4rem;
+        border-radius: 50%;
+    }
+
+    &__user-name{
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+}
