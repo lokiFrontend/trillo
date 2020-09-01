@@ -1,7 +1,7 @@
 .sidebar{
     background-color: var(--grey-dark-1);
     flex: 0 0 18%;
-    height: 100rem;
+    min-height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

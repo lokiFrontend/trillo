@@ -11,6 +11,18 @@
   --grey-dark-3: #999;
   --box-shadow: 0 2rem 6rem rgba(0,0,0, 0.3); }
 
+@keyframes popButton {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3); }
+  100% {
+    scale: 1;
+    transform: scale(1);
+    box-shadow: none; } }
+
 *,
 *::before,
 *::after {
@@ -31,6 +43,33 @@ body {
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.heading-primary {
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem; }
+
+.btn-inline {
+  font-size: inherit;
+  color: var(--color-primary);
+  display: inline-block;
+  border: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+  background-color: transparent;
+  cursor: pointer; }
+  .btn-inline:hover {
+    color: var(--grey-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: popButton 1s infinite; }
+
+.gallery {
+  display: flex; }
+  .gallery__img {
+    width: 100%;
+    display: block; }
 
 .nav {
   display: flex;
@@ -127,7 +166,7 @@ body {
 .sidebar {
   background-color: var(--grey-dark-1);
   flex: 0 0 18%;
-  height: 100rem;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -180,3 +219,40 @@ body {
 .hotel-view {
   background-color: #fff;
   flex: 1; }
+
+.overview {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-light-2); }
+  .overview__rating {
+    margin-right: auto;
+    display: flex; }
+  .overview__icon-star {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary); }
+  .overview__location {
+    display: flex;
+    margin: 0 2.2rem; }
+  .overview__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary);
+    margin-right: 0.5rem; }
+  .overview__score {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.2rem;
+    color: #fff; }
+  .overview__score-value {
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .overview__score-votes {
+    font-size: 0.8rem;
+    margin-top: -3px;
+    text-transform: uppercase; }
