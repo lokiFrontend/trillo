@@ -1,0 +1,19 @@
+.btn-inline{
+    font-size: inherit;
+    color: var(--color-primary);
+    display: inline-block;
+    border: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid currentColor;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover{
+        color: var(--grey-dark-1);
+    }
+
+    &:focus{
+        outline: none;
+        animation: popButton 1s infinite;
+    }
+}
