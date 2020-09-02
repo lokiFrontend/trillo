@@ -1,0 +1,77 @@
+.description{
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0,0,0, 0.15);
+    padding: 3rem;
+
+    &__content:not(:last-of-type){
+        margin-bottom: 2rem;
+    }
+
+    &__list{
+        list-style: none;
+        margin: 3rem 0;
+        padding: 3rem;
+        border-top: 1px solid var(--grey-light-2);
+        border-bottom: 1px solid var(--grey-light-2);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1rem;
+        &::before{
+            content: "";
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+            margin-right: 0.5rem;
+            
+            // background-image: url(../img/chevron-thin-right.svg);
+            // background-size: cover;
+
+            background-color: var(--color-primary);
+            -webkit-mask-image: url(../img/chevron-thin-right.svg);
+            -webkit-mask-size: cover;
+            mask-image: url(../img/chevron-thin-right.svg);
+            mask-size: cover;
+        }
+    }
+
+    &__list-icon{
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__recommend{
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__span{
+        color: var(--grey-dark-3);
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    &__people{
+        display: flex;
+    }
+
+    &__image{
+        height: 4rem;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        box-sizing: content-box;
+        &:not(:last-child){
+            margin-right: -2rem;
+        }
+    }
+}

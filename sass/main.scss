@@ -8,8 +8,10 @@
 @import './base/utilities';
 
 @import './components/btn';
+@import './components/description';
 @import './components/gallery';
 @import './components/nav';
+@import './components/review';
 @import './components/search';
 
 @import './layout/container';
@@ -17,4 +19,4 @@
 @import './layout/header';
 @import './layout/sidebar';
 
-@import './pages/home';
+@import './pages/hotel';

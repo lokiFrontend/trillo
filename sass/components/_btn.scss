@@ -7,9 +7,18 @@
     border-bottom: 1px solid currentColor;
     background-color: transparent;
     cursor: pointer;
+    align-self: center;
+
+    span{
+        transition: all 0.2s;
+    }
 
     &:hover{
         color: var(--grey-dark-1);
+    }
+
+    &:hover span{
+        margin-left: 0.5rem;
     }
 
     &:focus{
