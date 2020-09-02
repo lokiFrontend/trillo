@@ -50,6 +50,9 @@ body {
   text-transform: uppercase;
   padding: 1.5rem 3rem; }
 
+.u-border-bottom {
+  border-bottom: 1px solid var(--grey-light-2); }
+
 .btn-inline {
   font-size: inherit;
   color: var(--color-primary);
@@ -58,12 +61,72 @@ body {
   padding-bottom: 2px;
   border-bottom: 1px solid currentColor;
   background-color: transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  align-self: center; }
+  .btn-inline span {
+    transition: all 0.2s; }
   .btn-inline:hover {
     color: var(--grey-dark-1); }
+  .btn-inline:hover span {
+    margin-left: 0.5rem; }
   .btn-inline:focus {
     outline: none;
     animation: popButton 1s infinite; }
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  padding: 3rem; }
+  .description__content:not(:last-of-type) {
+    margin-bottom: 2rem; }
+  .description__list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem;
+    border-top: 1px solid var(--grey-light-2);
+    border-bottom: 1px solid var(--grey-light-2);
+    display: flex;
+    flex-wrap: wrap; }
+  .description__item {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem; }
+    .description__item::before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+      background-color: var(--color-primary);
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+      mask-image: url(../img/chevron-thin-right.svg);
+      mask-size: cover; }
+  .description__list-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary); }
+  .description__recommend {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .description__span {
+    color: var(--grey-dark-3);
+    display: block;
+    font-size: 1.3rem; }
+  .description__people {
+    display: flex; }
+  .description__image {
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-sizing: content-box; }
+    .description__image:not(:last-child) {
+      margin-right: -2rem; }
 
 .gallery {
   display: flex; }
@@ -106,6 +169,51 @@ body {
     padding-left: 1rem;
     font-size: 1.4rem; }
 
+.review {
+  padding: 3rem;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden; }
+  .review__text {
+    position: relative;
+    z-index: 10; }
+  .review__user {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center; }
+  .review__user-image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 2rem; }
+  .review__user-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto; }
+  .review__user-name {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem; }
+  .review__date {
+    font-size: 1rem; }
+  .review__user-rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-primary); }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    top: -2.5rem;
+    left: -1rem;
+    font-size: 20rem;
+    font-family: sans-serif;
+    line-height: 1;
+    color: var(--grey-light-2);
+    z-index: 1; }
+
 .search {
   flex: 0 0 40%;
   display: flex;
@@ -146,8 +254,7 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--grey-light-1);
-  box-shadow: var(--box-shadow);
-  min-height: 80rem; }
+  box-shadow: var(--box-shadow); }
 
 .content {
   display: flex; }
@@ -166,7 +273,6 @@ body {
 .sidebar {
   background-color: var(--grey-dark-1);
   flex: 0 0 18%;
-  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -256,3 +362,15 @@ body {
     font-size: 0.8rem;
     margin-top: -3px;
     text-transform: uppercase; }
+
+.details {
+  background-color: var(--grey-light-1);
+  padding: 4.5rem;
+  display: flex;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--grey-light-2); }
+
+.reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column; }
