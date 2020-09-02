@@ -68,3 +68,18 @@
     display: flex;
     flex-direction: column;
 }
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+
+    &__text{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-bottom: 3rem;
+    }
+}
