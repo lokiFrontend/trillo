@@ -2,25 +2,24 @@
 
 Trillo CSS Project to demonstrate Flexbox
 
-Hosted At: 
+Hosted At: https://loki-trillo.web.app/
 
 Based on udemy tutorial by Jonas Schmedtmann
 
-Topics Covered:
+Topic Covered: FlexBox
 
-FlexBox
+# Hosting Details:
 
-Hosting Details:
-Firebase Console
+Cloud: Firebase Console
+
 Project: loki-trillo
-install firebase CLI: npm install -g firebase-tools
-firebase login
-firebase init
-Hosting
-Use and existing project 
 
-What do you want to use as your public directory? starter
+Installing firebase CLI: npm install -g firebase-tools -> firebase login -> firebase init -> Hosting -> Use an existing project 
+
+What do you want to use as your public directory? starter (Project directoty)
+
 Configure as a single-page app (rewrite all urls to /index.html)? Yes
- File starter/index.html already exists. Overwrite? (y/N) N
 
- firebase deploy
+File starter/index.html already exists. Overwrite? (y/N) N
+
+firebase deploy
