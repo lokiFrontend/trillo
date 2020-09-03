@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 31.25em){
+        flex: 0 0 100%;
+        order: 1;
+    } 
 
     &__input{
         font-family: inherit;
@@ -14,10 +18,16 @@
         border-radius: 50px;
         flex: 0 0 80%;
         transition: flex 0.3s;
+        @media only screen and (max-width: 31.25em){
+            flex: 0 0 50%;
+        } 
 
         &:focus{
             outline: none;
             flex: 0 0 100%;
+            @media only screen and (max-width: 31.25em){
+                flex: 0 0 70%;
+            } 
         }
         &::placeholder{
             color: var(--grey-light-4);

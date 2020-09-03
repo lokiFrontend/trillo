@@ -37,7 +37,13 @@
 
     &__user-photo{
         height: 4rem;
+        width: 4rem;
         border-radius: 50%;
+        @media only screen and (max-width: 31.25em){
+            height: 5rem;
+            width: 5rem;
+        } 
+
     }
 
     &__user-name{
