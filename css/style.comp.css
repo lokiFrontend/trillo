@@ -60,7 +60,7 @@ body {
     .heading-primary {
       font-size: 1.4rem;
       padding: 1rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 28.125em) {
     .heading-primary {
       order: -1;
       flex: 0 0 100%;
@@ -455,14 +455,14 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--grey-light-2); }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 28.125em) {
     .overview {
       flex-wrap: wrap;
       justify-content: space-evenly; } }
   .overview__rating {
     margin-right: auto;
     display: flex; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 28.125em) {
       .overview__rating {
         margin-right: 0; } }
   .overview__icon-star {
@@ -472,7 +472,7 @@ body {
   .overview__location {
     display: flex;
     margin: 0 2.2rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 28.125em) {
       .overview__location {
         margin: 0; } }
   .overview__icon-location {
@@ -480,7 +480,7 @@ body {
     width: 1.75rem;
     fill: var(--color-primary);
     margin-right: 0.5rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 28.125em) {
       .overview__icon-location {
         margin-right: 0.2rem; } }
   .overview__score {
@@ -495,7 +495,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .overview__score {
         padding: 0 1.5rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 28.125em) {
       .overview__score {
         flex-direction: row;
         align-self: center;
@@ -512,7 +512,7 @@ body {
     font-size: 0.8rem;
     margin-top: -3px;
     text-transform: uppercase; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 28.125em) {
       .overview__score-votes {
         margin-top: 0px;
         margin-left: 0.3rem; } }

@@ -9,7 +9,7 @@
     align-items: center;
     border-bottom: 1px solid var(--grey-light-2);
 
-    @media only screen and (max-width: 25em){
+    @media only screen and (max-width: 28.125em){
         flex-wrap: wrap;
         justify-content: space-evenly;
     }    
@@ -17,7 +17,7 @@
     &__rating{
         margin-right: auto;
         display: flex;
-        @media only screen and (max-width: 25em){
+        @media only screen and (max-width: 28.125em){
             margin-right: 0;
         } 
 
@@ -32,7 +32,7 @@
     &__location{
         display: flex;
         margin: 0 2.2rem;
-        @media only screen and (max-width: 25em){
+        @media only screen and (max-width: 28.125em){
             margin: 0;
         } 
     }
@@ -42,7 +42,7 @@
         width: 1.75rem;
         fill: var(--color-primary);
         margin-right: 0.5rem;
-        @media only screen and (max-width: 25em){
+        @media only screen and (max-width: 28.125em){
             margin-right: 0.2rem;
         } 
 
@@ -60,7 +60,7 @@
         @media only screen and (max-width: 37.5em){
             padding: 0 1.5rem;
         } 
-        @media only screen and (max-width: 25em){
+        @media only screen and (max-width: 28.125em){
             flex-direction: row;
             align-self: center;
             color: var(--color-primary);
@@ -81,7 +81,7 @@
         font-size: 0.8rem;
         margin-top: -3px;
         text-transform: uppercase;
-        @media only screen and (max-width: 25em){
+        @media only screen and (max-width: 28.125em){
             margin-top: 0px;
             margin-left: 0.3rem;
         }  
