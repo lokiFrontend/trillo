@@ -6,6 +6,11 @@
     position: relative;
     overflow: hidden;
 
+    @media only screen and (max-width: 56.25em){
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }         
+
     &__text{
         position: relative;
         z-index: 10;
