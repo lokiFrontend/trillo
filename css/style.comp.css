@@ -60,6 +60,11 @@ body {
     .heading-primary {
       font-size: 1.4rem;
       padding: 1rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-primary {
+      order: -1;
+      flex: 0 0 100%;
+      text-align: center; } }
 
 .u-border-bottom {
   border-bottom: 1px solid var(--grey-light-2); }
@@ -450,9 +455,16 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--grey-light-2); }
+  @media only screen and (max-width: 25em) {
+    .overview {
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
   .overview__rating {
     margin-right: auto;
     display: flex; }
+    @media only screen and (max-width: 25em) {
+      .overview__rating {
+        margin-right: 0; } }
   .overview__icon-star {
     height: 1.75rem;
     width: 1.75rem;
@@ -460,11 +472,17 @@ body {
   .overview__location {
     display: flex;
     margin: 0 2.2rem; }
+    @media only screen and (max-width: 25em) {
+      .overview__location {
+        margin: 0; } }
   .overview__icon-location {
     height: 1.75rem;
     width: 1.75rem;
     fill: var(--color-primary);
     margin-right: 0.5rem; }
+    @media only screen and (max-width: 25em) {
+      .overview__icon-location {
+        margin-right: 0.2rem; } }
   .overview__score {
     background-color: var(--color-primary);
     display: flex;
@@ -477,6 +495,13 @@ body {
     @media only screen and (max-width: 37.5em) {
       .overview__score {
         padding: 0 1.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .overview__score {
+        flex-direction: row;
+        align-self: center;
+        color: var(--color-primary);
+        background-color: #fff;
+        padding: 1rem 0rem; } }
   .overview__score-value {
     font-size: 2.2rem;
     font-weight: 300; }
@@ -487,6 +512,10 @@ body {
     font-size: 0.8rem;
     margin-top: -3px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 25em) {
+      .overview__score-votes {
+        margin-top: 0px;
+        margin-left: 0.3rem; } }
 
 .details {
   background-color: var(--grey-light-1);

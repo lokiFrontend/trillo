@@ -13,4 +13,10 @@
         font-size: 1.4rem;
         padding: 1rem;
     } 
+
+    @media only screen and (max-width: 25em){
+        order: -1;
+        flex: 0 0 100%;
+        text-align: center;
+    }     
 }
